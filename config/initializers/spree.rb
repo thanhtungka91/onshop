@@ -29,7 +29,7 @@ attachment_config = {
     s3_headers:     { "Cache-Control" => "max-age=31557600" },
     s3_protocol:    "https",
     bucket:         "elasticbeanstalk-us-west-2-797738718062",
-    url:            ":s3_domain_url",
+    url:            "s3.amazonaws.com/bucket",
 
     styles: {
         mini:     "48x48>",
