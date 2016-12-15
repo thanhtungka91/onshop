@@ -20,16 +20,16 @@ Spree.user_class = "Spree::LegacyUser"
 attachment_config = {
 
     s3_credentials: {
-        access_key_id: "AKIAI3QAYNK2AUJDQS2Q",
-        secret_access_key: "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",
-        bucket: "elasticbeanstalk-us-west-2-797738718062"
+        access_key_id:     ENV['AKIAI3QAYNK2AUJDQS2Q'],
+        secret_access_key: ENV['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'],
+        bucket:            ENV['elasticbeanstalk-us-west-2-797738718062']
     },
 
     storage:        :s3,
     s3_headers:     { "Cache-Control" => "max-age=31557600" },
     s3_protocol:    "https",
-    bucket:         "elasticbeanstalk-us-west-2-797738718062",
-    url:            "s3-us-west-2.amazonaws.com/",
+    bucket:         ENV['elasticbeanstalk-us-west-2-797738718062'],
+    url:            ":s3-us-west-2.amazonaws.com",
 
     styles: {
         mini:     "48x48>",
