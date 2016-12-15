@@ -29,7 +29,7 @@ attachment_config = {
     s3_headers:     { "Cache-Control" => "max-age=31557600" },
     s3_protocol:    "https",
     bucket:         ENV['S3_BUCKET_NAME'],
-    url:            ":s3-us-west-2.amazonaws.com",
+    url:            "s3-us-west-2.amazonaws.com/",
 
     styles: {
         mini:     "48x48>",
