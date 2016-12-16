@@ -22,4 +22,6 @@ Things you may want to cover:
 
 * Deployment instructions
     this app has been deploy on digitalocean 
+    http://138.197.9.140:3000/
+    http://138.197.9.140:3000/admin 
 * ...
