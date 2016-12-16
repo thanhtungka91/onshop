@@ -15,7 +15,9 @@ default: &default
 
 development:
   <<: *default
-  database: onshop_development
+  database: onshop_dev
+  username: root
+  password: ENV['DATABASEPASS']
 
 
 # Warning: The database defined as "test" will be erased and
@@ -23,10 +25,12 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: shop_test
+  database: onshop_test
+  username: root
+  password: ENV['DATABASEPASS']
 
 production:
   <<: *default
-  database: onshop_production
-  username: store
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  database: onshop_pro
+  username: root
+  password: ENV['DATABASEPASS']
