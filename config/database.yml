@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 #
 default: &default
-  host: localhost
+  host: /var/run/postgresql
   post: 5432
   adapter: postgresql
   encoding: unicode
@@ -17,7 +17,7 @@ development:
   <<: *default
   database: onshop_dev
   username: root
-#  password: ENV['DATABASEPASS']
+  password: ENV['DATABASEPASS']
 
 
 # Warning: The database defined as "test" will be erased and
@@ -27,10 +27,10 @@ test:
   <<: *default
   database: onshop_test
   username: root
-#  password: ENV['DATABASEPASS']
+  password: ENV['DATABASEPASS']
 
 production:
   <<: *default
   database: onshop_pro
   username: root
-#  password: ENV['DATABASEPASS']
+  password: ENV['DATABASEPASS']
