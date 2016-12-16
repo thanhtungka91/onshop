@@ -54,13 +54,13 @@ GEM
       execjs
     awesome_nested_set (3.1.1)
       activerecord (>= 4.0.0, < 5.1)
-    aws-sdk (2.6.36)
-      aws-sdk-resources (= 2.6.36)
-    aws-sdk-core (2.6.36)
+    aws-sdk (2.6.38)
+      aws-sdk-resources (= 2.6.38)
+    aws-sdk-core (2.6.38)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.36)
-      aws-sdk-core (= 2.6.36)
+    aws-sdk-resources (2.6.38)
+      aws-sdk-core (= 2.6.38)
     aws-sigv4 (1.0.0)
     bcrypt (3.1.11)
     bootstrap-sass (3.3.7)
@@ -108,6 +108,8 @@ GEM
     execjs (2.7.0)
     ffaker (2.2.0)
     ffi (1.9.14)
+    figaro (1.1.1)
+      thor (~> 0.14)
     font-awesome-rails (4.7.0.1)
       railties (>= 3.2, < 5.1)
     friendly_id (5.1.0)
@@ -344,6 +346,7 @@ DEPENDENCIES
   aws-sdk (~> 2.3)
   byebug
   coffee-rails (~> 4.2)
+  figaro
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
